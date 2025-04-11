@@ -10,17 +10,22 @@
 
 
     <script>
-        const book ={
-            title:"computer",
-            auther:"reza",
-            year:"2025",
-            getSummary(){
-                console.log(`the book ${this.title} was write by ${this.auther} in ${this.year}`);
-                
-            }
-        }
-        book.getSummary()
+      const car = {
+        brand:'Toyota',
+        model:'corolla',
+        year:"2022",
 
+      }
+    
+      for (const key in car) {
+        console.log(key+ ':'+car[key]);
+        
+      }
+
+      console.log(Object.values(car));
+      console.log(JSON.stringify(car));
+      
+      
     </script>
 
 </body>
