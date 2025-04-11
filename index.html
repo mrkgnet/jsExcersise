@@ -7,15 +7,19 @@
     <p id="demo2"></p>
 
 
-  
+
 
     <script>
-      const foo = ["one", "two"];
-
-const [red,...res] = foo;
-console.log(red); // "one"
-console.log(...res); // "two"
-
+        const book ={
+            title:"computer",
+            auther:"reza",
+            year:"2025",
+            getSummary(){
+                console.log(`the book ${this.title} was write by ${this.auther} in ${this.year}`);
+                
+            }
+        }
+        book.getSummary()
 
     </script>
 
