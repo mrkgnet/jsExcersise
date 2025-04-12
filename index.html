@@ -10,22 +10,18 @@
 
 
     <script>
-      const car = {
-        brand:'Toyota',
-        model:'corolla',
-        year:"2022",
-
+      // constructor function 
+      function student(firstname ,lastname, year ){
+        this.firstname = firstname
+        this.lastname = lastname
+        this.year = year
+        this.getAge = function(){
+          console.log(`${this.firstname} ${this.lastname} is ${this.year} old`);
+          
+        }
       }
-    
-      for (const key in car) {
-        console.log(key+ ':'+car[key]);
-        
-      }
-
-      console.log(Object.values(car));
-      console.log(JSON.stringify(car));
-      
-      
+      const obj = new student("reza",'ahmadi','20')
+      obj.getAge()
     </script>
 
 </body>
