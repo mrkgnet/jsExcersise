@@ -4,24 +4,18 @@
 <body>
 
 
-    <p id="demo2"></p>
-
-
+   
+    <button onclick="showLog()" type="button" >clickme</button>
+  <input type="text" name="" id="myInput">
 
 
     <script>
       // constructor function 
-      function student(firstname ,lastname, year ){
-        this.firstname = firstname
-        this.lastname = lastname
-        this.year = year
-        this.getAge = function(){
-          console.log(`${this.firstname} ${this.lastname} is ${this.year} old`);
-          
-        }
-      }
-      const obj = new student("reza",'ahmadi','20')
-      obj.getAge()
+     function showLog(){console.log("clicked")}
+     document.getElementById("myInput").addEventListener('input',function(e){
+        console.log(e.target.value);
+        
+     })
     </script>
 
 </body>
